@@ -24,4 +24,16 @@ While [this Gist](https://gist.github.com/BillRaymond/74b82f703239480518af1fa67a
 ## Clone this repo
 1. Run VSC, clone the repo locally and open the folder
 2. Type COMMMAND+SHIFT+P and select the `Dev Containers: Open folder in container...` option. Select `Dockerfile` and select `Ok` without selecting any additional options
-3. Run a 
+
+## Run entrypoint
+Even though the Dockerfile provides an `entrypoint`, it will not run by default.
+
+1. In VSC, open a terminal window
+2. Type `sh entrypoint.sh`. That will pull the latest code from AUTOMATIC111's Stable Diffusion Web UI (SDWUI) repo and create a new folder with the name `stable-diffusion-web-ui`
+
+## Edit the launch.py file
+1. In the VSC Explorer, locate `stable-diffusion-web-ui/launch.py` and open it for editing
+2. Locate the following line: `commandline_args = os.environ.get('COMMANDLINE_ARGS', "")` and replace it with:
+```
+commandline_args = os.environ.get('COMMANDLINE_ARGS', "--skip-torch-cuda-test --opt-sdp-attention --precision full --no-half")
+```

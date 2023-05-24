@@ -1,3 +1,8 @@
+# Clone the AUTOMATIC1111 Stable Diffusion Web UI (SDWUI) from GitHub
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
-cd /workspaces/automatic1111/stable-diffusion-webui
-git config --global --add safe.directory "*"
+
+# Create a new user
+useradd -s /bin/bash -d /home/sdwui/ -m -G sudo sdwui
+
+# Login as that user
+su sdwui
