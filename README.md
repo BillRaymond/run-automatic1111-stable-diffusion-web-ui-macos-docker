@@ -64,7 +64,7 @@ sh runonce-step3-instructions.sh
 To run SDWUI, you need a non-root user. This script will create that user. If you attempt to run this again, you could encounter an error. However, if you re-build the Docker container, you will have to run this again.
 
 
-1. Run the following script in terminal to crate a non-root user (by default it will be named `sdwui`):
+1. Open a new terminal within VSC and run the following script in terminal to crate a non-root user (by default it will be named `sdwui`):
 ```
 sh runonce-step4-addnonrootuser.sh
 ```
