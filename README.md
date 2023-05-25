@@ -58,6 +58,8 @@ sh runonce-step2-downloadsdmodel.sh
 sh runonce-step3-instructions.sh
 ```
 
+4. ⚠️ Make sure you `kill` the terminal window (a 🗑️ trash can icon) **or** `COMMAND+SHIFT+P` and `Terminal: Kill all terminals`
+
 ## 1️⃣ Run once _OR_ any time you ↪️ rebuild the Docker container
 To run SDWUI, you need a non-root user. This script will create that user. If you attempt to run this again, you could encounter an error. However, if you re-build the Docker container, you will have to run this again.
 
