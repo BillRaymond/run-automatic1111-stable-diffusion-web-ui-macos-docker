@@ -73,7 +73,7 @@ sh runonce-step4-addnonrootuser.sh
 ## 🎉 Run SDWUI
 Now that you followed all the first-time setup options, you can run SDWUI!
 
-1. Open a new terminal window and run the following command:
+1. Open a new terminal within VSC and run the following command:
 ```
 sh runsdwui.sh
 ```
